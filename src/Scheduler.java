@@ -12,7 +12,9 @@ public class Scheduler {
     public void makeSchedule(ArrayList<Task> tasks){
         //set up initial conditions
         if(tasks == null){
-            System.out.println("Some one messed with the code in the Test Document"); return;}
+            System.out.println("Some one messed with the code in the Test Document");
+            return;
+        }
 
         int time = 0;
         if(tasks.size()>0){
@@ -38,12 +40,6 @@ public class Scheduler {
                 }
             }
 
-//            if(!tasks.isEmpty()){
-//                while(time == tasks.get(0).start){ // assuming the tasks are in order by start time as I checked....
-//                    queue.Insert(tasks.get(0));
-//                    tasks.remove(0);
-//                }
-//            }
 
             durationCount++;
             if(curTask == null) {
